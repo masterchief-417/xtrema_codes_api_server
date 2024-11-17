@@ -1,2 +1,3 @@
 const server_url = Deno.env.get('SERVER_URL')
-console.log(server_url)
+
+export default server_url
