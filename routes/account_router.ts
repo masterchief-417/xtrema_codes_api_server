@@ -1,6 +1,6 @@
 import {Router} from "@oak/oak/router"
 import check_auth_details from "../components/check_auth_details.ts";
-import server_url from "../database/server.ts";
+import {server_url} from "../database/server.ts";
 
 const account_router = new Router({
     prefix: '/account'
