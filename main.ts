@@ -8,7 +8,7 @@ import series_router from "./routes/series_router.ts";
 const router = new Router()
 
 router.get('/',(context)=>{
-  context.response.body= "Halo v1.0.0"
+  context.response.body= "Halo v1.0.0 ◉"
 })
 
 const app = new Application()
