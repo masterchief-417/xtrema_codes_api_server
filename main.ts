@@ -4,6 +4,7 @@ import account_router from "./routes/account_router.ts";
 import channels_router from "./routes/channels_router.ts";
 import movies_router from "./routes/movies_router.ts";
 import series_router from "./routes/series_router.ts";
+import { oakCors } from "https://deno.land/x/cors/mod.ts";
 
 const router = new Router()
 
@@ -12,6 +13,7 @@ router.get('/',(context)=>{
 })
 
 const app = new Application()
+app.use(oakCors({origin:"*"}))
 app.use(router.routes())
 app.use(router.allowedMethods())
 
